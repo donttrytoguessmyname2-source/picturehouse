@@ -209,7 +209,7 @@
         .change {
             color: #ed1b56;
             font-weight: 700;
-            margin-top: 20px;
+            margin-top: -10px;
         }
 
         .divider {
@@ -217,18 +217,12 @@
             border: none;
             border-top: 1px solid #eff0f4;
             height: 8px;
-            margin: 0;
-            border-image-repeat: stretch;
-            border-image-slice: 100%;
-            overflow-x: hidden;
-            display: block;
             border-right-width: 0px;
             border-left-width: 0px;
-            width: 360px;
-            border-image-outset: 0;
+            width: 100%;
             padding-left: 0px;
             margin-top: 25px;
-            margin-left: -25px;
+            margin-bottom: 30px;
         }
 
         .content {
@@ -322,9 +316,8 @@
             background: #f2f3f2;
             padding: 0px;
             display: block;
-            width: 360px;
-            margin-left: -25px;
             padding: 25px;
+            margin-top: 25px;
         }
 
         footer {
@@ -489,7 +482,7 @@
             </div>
             <div class="location">
                 Enter cinema location
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="16" height="16">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="16" height="16" transform="translate(0, 3)">
                     <path fill="#ed1b56"
                         d="M228 104a12 12 0 0 1-24 0V69l-59.51 59.51a12 12 0 0 1-17-17L187 52h-35a12 12 0 0 1 0-24h64a12 12 0 0 1 12 12Zm-44 24a12 12 0 0 0-12 12v64H52V84h64a12 12 0 0 0 0-24H48a20 20 0 0 0-20 20v128a20 20 0 0 0 20 20h128a20 20 0 0 0 20-20v-68a12 12 0 0 0-12-12" />
                 </svg>
@@ -507,56 +500,61 @@
                 <div class="value">B5</div>
             </div>
             <div class="change">
-                🎟 Change seats
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="20" height="auto" transform="translate(0, 5)">
+                    <path fill="#ed1b56"
+                        d="M6 3h3a3 3 0 0 1 3 3v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a3 3 0 0 1 3-3m9 9h3a3 3 0 0 1 3 3v5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-5a3 3 0 0 1 3-3m-.3-3.66c0 .109.048.213.134.29l1.943 1.75c.178.16.468.16.646 0l1.943-1.75a.383.383 0 0 0 0-.581.48.48 0 0 0-.323-.12h-1.181v-3c0-.237-.268-.429-.505-.429H13.93c-.294 0-.429.16-.429.429v.685c0 .23.181.37.429.37h2.41v1.944h-1.182c-.252 0-.457.184-.457.411M9.3 15.66a.4.4 0 0 0-.134-.29l-1.943-1.75a.49.49 0 0 0-.646 0l-1.943 1.75a.383.383 0 0 0 0 .581c.085.078.202.12.323.12h1.181v3c0 .237.268.429.505.429h3.428c.294 0 .429-.16.429-.429v-.685c0-.23-.181-.37-.429-.37h-2.41v-1.944h1.182c.252 0 .457-.184.457-.411" />
+                </svg> Change seats
             </div>
 
-            <div class="divider">
-            </div>
 
-            <div class="content">
 
-                <h2>Order details</h2>
 
-                <div class="order">
-
-                    <p class="booking-id">
-                        Booking ID: WMZRCR2
-                    </p>
-
-                    <h3>TICKETS</h3>
-
-                    <div class="row">
-                        <span>1x Standard</span>
-                        <span>£0.00</span>
-                    </div>
-
-                    <hr>
-
-                    <div class="row_total">
-                        <span>TOTAL</span>
-                        <span>£0.00</span>
-                    </div>
-
-                    <button class="refund-btn">
-                        <i class="fa-solid fa-eye-slash"></i>
-                        Refund unavailable
-                    </button>
-
-                </div>
-
-            </div>
-
-            <footer>
-                <div class="footer_bg">
-                    <p>2026 Picturehouse © All rights reserved</p>
-
-                    <p>About us</p>
-                    <p>Terms and Conditions</p>
-                    <p>Privacy and Cookies</p>
-                    <p>FAQs</p>
-                </div>
-            </footer>
         </div>
+        <div class="divider">
+        </div>
+        <div class="card">
+
+            <h2>Order details</h2>
+
+            <div class="order">
+
+                <p class="booking-id">
+                    Booking ID: WMZRCR2
+                </p>
+
+                <h3>TICKETS</h3>
+
+                <div class="row">
+                    <span>1x Adult</span>
+                    <span>£16.65</span>
+                </div>
+
+                <hr>
+
+                <div class="row_total">
+                    <span>TOTAL</span>
+                    <span>16.65</span>
+                </div>
+
+                <button class="refund-btn">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    Refund unavailable
+                </button>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer_bg">
+                <p>2026 Picturehouse © All rights reserved</p>
+
+                <p>About us</p>
+                <p>Terms and Conditions</p>
+                <p>Privacy and Cookies</p>
+                <p>FAQs</p>
+            </div>
+        </footer>
 
     </div>
     </div>
