@@ -83,7 +83,7 @@
         .hero {
             position: relative;
             height: 350px;
-            background: url("https://s3picturehouses.s3.eu-central-1.amazonaws.com/slider/ph_16322361326149f2641b029.jpg") center/cover;
+            background: url("https://s3picturehouses.s3.eu-central-1.amazonaws.com/slider/ph_15756318225dea3bcea8012.jpg") center/cover;
             overflow: hidden;
             background-color: var(--v-color-primary-100);
             background-position: 50%;
@@ -687,16 +687,19 @@
             const now = Date.now();
             const delta = now - lastTap;
 
-            if (delta < 300 && delta > 0) {
+            if (delta < 400 && delta > 0) {
                 const x = e.changedTouches[0].clientX;
                 const width = hero.clientWidth;
 
-                if (x < width / 2) {
+                if (x < width / 3) {
                     // double tap left
                     currentId--;
-                } else {
+                } else if (x > (7/8 * width)) {
                     // double tap right
                     currentId++;
+                }
+                else {
+                    console.log("nothing");
                 }
 
                 updateBackground();
