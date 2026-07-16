@@ -674,8 +674,8 @@
 
         let currentId = 10;
 
-        function updateBackground() {
-            const newUrl = getImageUrl(currentId);
+        async function updateBackground() {
+            const newUrl = await getImageUrl(currentId);
             console.log(newUrl);
             hero.style.backgroundImage = `url("${newUrl}")`;
         }
